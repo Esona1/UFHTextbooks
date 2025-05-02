@@ -7,6 +7,13 @@ public class Book {
     private double Price;
     private String BankInfo;
 
+public Book(String Title,String Seller, int Num_of_Copies,double Price, String BankInfo){
+    this.Title= Title;
+    this.Seller=Seller;
+    this.Num_of_Copies=Num_of_Copies;
+    this.Price=Price;
+    this.BankInfo=BankInfo;
+}
 
 
     public String getTitle() {
