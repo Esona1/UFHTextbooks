@@ -16,6 +16,13 @@ public class ListBookActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_book);
 
+titleInput = findViewById(R.id.titleEditText);
+sellerInput = findViewById(R.id.sellerEditText);
+copiesInput = findViewById(R.id.copiesEditText);
+priceInput = findViewById(R.id.priceEditText);
+bankInput = findViewById(R.id.bankEditText);
+submitButton = findViewById(R.id.submitButton);
+statusMessage = findViewById(R.id.statusTextView);
 
 
         submitButton.setOnClickListener(view -> {
