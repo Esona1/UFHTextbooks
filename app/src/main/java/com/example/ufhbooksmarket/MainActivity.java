@@ -18,6 +18,15 @@ public class MainActivity extends Activity {
     private ArrayAdapter<String> adapter;
     private ArrayList<String> displayBooks;
 
+    @Override
+protected void onCreate(Bundle savedInstanceState){
+  super.onCreate(savedInstanceState);
+  setContentView(R.layout.activity_main);
+
+    listView = findViewById(R.id.bookListView);
+    searchInput = findViewById(R.id.searchEditText);
+    searchButton = findViewById(R.id.searchButton);
+    addButton = findViewById(R.id.addBookButton);
 
 
         loadBookList(Book_Database.getInstance().getBooks());
