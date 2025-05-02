@@ -29,6 +29,15 @@ public class Book_Database {
     public ArrayList<Book> getBooks() {
         return books;
     }
-
+    public ArrayList<Book> search(String keyword) {
+    ArrayList<Book> results = new ArrayList<>();
+    for (Book b : books) {
+        if (b.getTitle().toLowerCase().contains(keyword.toLowerCase()) ||
+                b.getSeller().toLowerCase().contains(keyword.toLowerCase())) {
+            results.add(b);
+        }
+    }
+    return results;
+}
 
 }
